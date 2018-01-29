@@ -1,0 +1,38 @@
+{
+  "name": "null2undefined",
+  "version": "1.0.0",
+  "description": "Library to scan inside passed value to convert null to undefined",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest",
+    "test-watch": "npm test -- --watch",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yevhenbondar/null2undefined.git"
+  },
+  "keywords": [
+    "convert",
+    "converting",
+    "null2undefined",
+    "null",
+    "undefined"
+  ],
+  "author": "Yevhen Bondar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yevhenbondar/null2undefined/issues"
+  },
+  "homepage": "https://github.com/yevhenbondar/null2undefined#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "jest": "^22.1.4",
+    "watch": "^1.0.2"
+  }
+}
